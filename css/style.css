@@ -1,0 +1,465 @@
+body{
+	background-color: #0A090A;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	background-image: url(../img/main-bg.png);
+	/*чтобы фон больше не повторялся*/
+	background-repeat: no-repeat;
+	/* привязываем расположение картинки по центру к верху*/
+	background-position: top center;
+
+}
+.container{
+	/*мвксимальная длинная контейнера*/
+	max-width: 1140px;
+	/*расположить контейнер по центру*/
+	margin: auto;
+
+}
+
+.header {
+	/*выровнять в ряд*/
+	display: flex;
+	/*расположить содержимое по центру относительно друг друга*/
+	align-items: center;
+	/* сделать расстояние между блоками*/
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-bottom: 30%;
+}
+
+.logo {
+font-style: normal;
+font-weight: 900;
+font-size: 24px;
+line-height: 28px;
+}
+.search{
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	/*подстройка автом размера длинны строки*/
+	flex: 0.8;
+}
+
+.search-input {
+	/*подстройка автом размера длинны строки*/
+flex: 1;
+font-size: 14px;
+line-height: 16px;
+background: rgba(196, 196, 196, 0.5);
+/* скругление*/
+border-radius: 5px;
+/*внутренний отступ сверху*/
+padding-top: 12px;
+/*внутренний отступ снизу*/
+padding-bottom: 12px;
+/*внутренний отступ слева*/
+padding-left: 18px;
+/*внутренний отступ справа*/
+padding-right: 18px;
+/*убиоаем стандартную рамку*/
+border: none;
+
+color: #AEAEAE;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #AEAEAE;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #AEAEAE;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #AEAEAE;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #AEAEAE;
+  opacity: 1;
+
+}
+
+.search-btn{
+	background-color: transparent;
+	border: none;
+	padding: 10px 18px;
+}
+
+.used{
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+.avatar{
+	margin-left: 20px;
+	width: 40px;
+	height: 40px;
+	/*скругление*/
+	border-radius: 50%;
+	object-fit: cover;
+}
+.title{
+	margin: 0;
+	font-family: 'Playfair Display', serif;
+	font-size: 48px;
+	line-height: 64px;
+	margin-bottom: 7px;
+}
+.title-en{
+	/*Стройчно- блочный отступ*/
+	display: inline-block;
+	font-size: 20px;
+	line-height: 23px;
+	color: #787878;
+	margin-bottom: 38px;
+}
+
+.info{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 109px;
+}
+
+.movie-info{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+}
+
+.tag{
+	display: inline-block;
+	font-size: 16px;
+	line-height: 19px;
+	color: #333333;
+	background: #FFFFFF;
+	border-radius: 3px;
+	padding: 5px 10px;
+	margin-right: 20px;
+}
+
+.country{
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+	/*Отступ в право*/
+	margin-right: 33px;
+}
+
+.play{
+	
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+	/*Убтрает подчеркивание текста */
+	text-decoration: none;
+
+}
+.play:before{
+	content: '';
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/play.svg);
+	background-repeat: no-repeat;
+	box-sizing: 100%;
+	margin-right: 20px;
+}
+.more{
+	
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	line-height: 19px;
+	color: #FFFFFF;
+	/*Убтрает подчеркивание текста */
+	text-decoration: none;
+
+}
+.more:after{
+	display: inline-block;
+	content: '';
+	width: 30px;
+	height: 32px;
+	background-image: url(../img/play.svg);
+	background-repeat: no-repeat;
+	box-sizing: 100%;
+	margin-left: 15px;
+	/*перевернуть на 90 градусов*/
+	transform: rotate(90deg);
+}
+
+.content{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	background: #FFFFFF;
+	border-radius: 3px;
+	color: #000000;
+	/*отступ внутри блока контент*/
+	padding: 3% 4%;
+}
+.short-info{
+	margin-right: 3%;
+}
+
+.poster{
+	display: block;
+	margin-top: -40%;
+	margin-bottom: 20px;
+}
+
+.btn{
+	background: #FF8F27;
+	padding: 10px 44px;
+	font-size: 14px;
+	line-height: 16px;
+	color: #FFFFFF;
+	border: none;
+}
+
+.actors-title{
+	padding-left: 15px;
+	font-weight: 900;
+	font-size: 16px;
+	line-height: 150%;
+	margin-bottom: 10px;
+}
+
+.actors-list{
+	margin: 0;
+	/*Убрали кругляшки в листе */
+	list-style: none;
+	padding-left: 15px;
+	/*Подчеркнутый текст*/
+	text-decoration: underline;
+	line-height: 150%;
+}
+
+.full-info{
+	
+	flex:0.98;
+}
+
+.full-content{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.tabs{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	margin-bottom: 3%;
+}
+.tabs-item{
+	color: #000000;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 21px;
+}
+.tabs-item:not(:last-child){
+	margin-right: 4%;
+}
+
+.tabs-item-active{
+color: #FF8F27;
+}
+
+.tabs-content{
+	display: none;
+	margin-right: 70px;
+}
+.visible{
+	display: block;
+}
+
+.text{
+
+	margin-top: 0;
+	font-size: 16px;
+	line-height: 140%;
+}
+.subscribe-title{
+	font-weight: 900;
+font-size: 16px;
+line-height: 150%;
+margin-bottom: 14px;
+margin-top: 0px;
+}
+
+.subscribe-input{
+font-size: 14px;
+line-height: 16px;
+background: rgba(196, 196, 196, 0.5);
+/* скругление только слевой стороны*/
+border-top-left-radius:5px;
+border-bottom-left-radius:5px;
+
+/*внутренний отступ сверху*/
+padding-top: 12px;
+/*внутренний отступ снизу*/
+padding-bottom: 12px;
+/*внутренний отступ слева*/
+padding-left: 18px;
+/*внутренний отступ справа*/
+padding-right: 18px;
+/*убиоаем стандартную рамку*/
+border: none;
+
+color: #AEAEAE;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #AEAEAE;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #AEAEAE;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #AEAEAE;
+  opacity: 1;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #AEAEAE;
+  opacity: 1;
+
+}
+.subscribe-form{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-bottom: 48px;
+}
+.subscribe-button{
+	background: #FF8F27;
+	border-radius: 0px 5px 5px 0px;
+	border: none;
+	padding: 12px;
+
+}
+@media (max-width: 1200px){
+.container{
+	max-width: 960px;
+	}
+.tabs-item{
+	font-size: 16px;
+
+}
+}
+@media (max-width: 992px){
+.container{
+	max-width: 740px;
+	}
+.tabs{
+	/*Если элементы не помещаются в  одну  строку их переносит */
+	-webkit-flex-wrap: wrap;
+	-moz-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	-o-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+.tabs-item{
+	line-height: 2;
+	flex-basis: 20%;
+}
+.full-content{
+	flex-wrap: wrap;
+}
+.tabs-content{
+	margin-bottom: 5%;
+}
+.text{
+	font-size: 14px;
+}
+.actors-list{
+	font-size: 14px;
+}
+}
+@media (max-width: 768px){
+	.more{
+		display: none;
+	}
+	.tabs-item{
+		flex-basis: 20%;
+	}
+	.tabs-content{
+		margin-right: 0;
+	}
+
+}
+@media (max-width: 768px){
+	.container{
+		min-width: 90%;
+	}
+	.header{
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.search{
+		flex-basis: 100%;
+		order: 3;
+		margin-top: 5%;
+	}
+	.content{
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.actors-list, .actors-title{
+		display: none;
+	}
+	.short.info{
+		margin-bottom: 5%;
+	}
+	.movie-info{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.short-info{
+		margin-right: 0;
+
+	}
+	.button{
+		width: 100%;
+	}
+	.poster{
+		display: inline-block;
+		width: 100%;
+		margin-top: -10%;
+	}
+}
+
